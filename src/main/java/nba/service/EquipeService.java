@@ -16,4 +16,8 @@ public class EquipeService {
     public List<Equipe> gettAllEquipe(){
         return equipe_Repository.findAll();
     }
+
+    public Equipe insert(Equipe e){
+        return equipe_Repository.save(e);
+    }
 }
