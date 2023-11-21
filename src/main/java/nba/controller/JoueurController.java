@@ -1,5 +1,6 @@
 package nba.controller;
 
+import jakarta.websocket.server.PathParam;
 import nba.model.Equipe;
 import nba.model.Joueur;
 import nba.service.EquipeService;
@@ -20,8 +21,10 @@ public class JoueurController {
         this.joueur_Servicer = Joueur_servicer;
     }
 
-    @GetMapping
-    public List<Joueur> getAllEquipe(@RequestBody Equipe e){
+    @GetMapping("/{equipe}")
+    public List<Joueur> getAllEquipe(@PathVariable("equipe") int equipe){
+        Equipe e = new Equipe();
+        e.setEquipe_id(equipe);
         return joueur_Servicer.getJoueurByEquipe(e);
     }
 }
