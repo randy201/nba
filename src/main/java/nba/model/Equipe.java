@@ -30,11 +30,4 @@ public class Equipe {
         this.equipe_nom = equipe_nom;
     }
 
-    public void setJoueurs(List<Joueur> joueurs) {
-        this.joueurs = joueurs;
-    }
-
-    public List<Joueur> getJoueurs() {
-        return joueurs;
-    }
 }
