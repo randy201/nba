@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Equipe")
-@CrossOrigin(origins = "*")
+@CrossOrigin("*")
 public class EquipeController {
     private EquipeService equipe_Service;
     private JoueurService joueur_service;
@@ -27,6 +27,4 @@ public class EquipeController {
     public List<Equipe> getAllEquipe(){
         return equipe_Service.gettAllEquipe();
     }
-
-
 }
