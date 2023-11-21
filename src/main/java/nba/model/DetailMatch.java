@@ -56,4 +56,5 @@ public class DetailMatch {
     public void setDet_action(Action det_action) {
         this.det_action = det_action;
     }
+
 }
