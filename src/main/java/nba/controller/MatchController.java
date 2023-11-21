@@ -2,8 +2,11 @@ package nba.controller;
 
 import nba.model.Equipe;
 import nba.model.Match;
+import nba.model.Score;
 import nba.service.JoueurService;
 import nba.service.MatchService;
+
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

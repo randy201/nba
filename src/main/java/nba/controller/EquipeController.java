@@ -24,4 +24,7 @@ public class EquipeController {
     public List<Equipe> getAllEquipe(){
         return equipe_Service.gettAllEquipe();
     }
+
+    @PostMapping
+    public Equipe insert(@RequestBody Equipe e){ return this.equipe_Service.insert(e); }
 }

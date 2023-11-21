@@ -3,6 +3,7 @@ package nba.service;
 import nba.model.Equipe;
 import nba.model.Joueur;
 import nba.model.Match;
+import nba.model.Score;
 import nba.repository.MatchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,6 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import java.util.List;
 @Service
 public class MatchService {
     @Autowired

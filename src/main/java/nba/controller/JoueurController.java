@@ -27,4 +27,11 @@ public class JoueurController {
         e.setEquipe_id(equipe);
         return joueur_Servicer.getJoueurByEquipe(e);
     }
+
+    @GetMapping
+    public List<Joueur> getAll(){
+        return joueur_Servicer.getAll();
+    }
+
+
 }

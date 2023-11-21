@@ -3,6 +3,7 @@ package nba.repository;
 import nba.model.Equipe;
 import nba.model.Joueur;
 import nba.model.Match;
+import nba.model.Score;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
