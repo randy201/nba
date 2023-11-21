@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/JoueurController")
+@RequestMapping("/Joueur")
 @CrossOrigin(origins = "*")
 public class JoueurController {
     private JoueurService joueur_Servicer;
