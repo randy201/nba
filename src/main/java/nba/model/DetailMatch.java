@@ -17,6 +17,13 @@ public class DetailMatch {
     private Action det_action;
     public DetailMatch(){}
 
+    public DetailMatch(Match det_match, Joueur det_joueur, int det_temps, Action det_action) {
+        this.det_match = det_match;
+        this.det_joueur = det_joueur;
+        this.det_temps = det_temps;
+        this.det_action = det_action;
+    }
+
     public int getDet_id() {
         return det_id;
     }
@@ -56,5 +63,6 @@ public class DetailMatch {
     public void setDet_action(Action det_action) {
         this.det_action = det_action;
     }
+
 
 }

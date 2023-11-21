@@ -16,6 +16,12 @@ public class Action {
     private int action_point;
     public Action(){}
 
+    public Action(int action_id,String action_nom,int action_point) {
+        setAction_id(action_id);
+        setAction_nom(action_nom);
+        setAction_point(action_point);
+    }
+
     public int getAction_id() {
         return action_id;
     }
