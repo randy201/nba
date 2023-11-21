@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/Joueur")
-@CrossOrigin(origins = "*")
+@CrossOrigin("*")
 public class JoueurController {
     private JoueurService joueur_Servicer;
 
