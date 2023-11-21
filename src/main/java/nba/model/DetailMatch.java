@@ -12,11 +12,9 @@ public class DetailMatch {
     private Match det_match;
     @ManyToOne
     private Joueur det_joueur;
-    private int det_temps;
     @ManyToOne
     private Action det_action;
     public DetailMatch(){}
-
 
     public int getDet_id() {
         return det_id;
@@ -40,14 +38,6 @@ public class DetailMatch {
 
     public void setDet_joueur(Joueur det_joueur) {
         this.det_joueur = det_joueur;
-    }
-
-    public int getDet_temps() {
-        return det_temps;
-    }
-
-    public void setDet_temps(int det_temps) {
-        this.det_temps = det_temps;
     }
 
     public Action getDet_action() {

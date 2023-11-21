@@ -11,9 +11,9 @@ public class Match {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int match_id;
     private Date match_date;
-    @OneToOne
+    @ManyToOne
     private Equipe match_equipe1;
-    @OneToOne
+    @ManyToOne
     private Equipe match_equipe2;
     public int match_score1;
     public int match_score2;
