@@ -1,11 +1,10 @@
 package nba.controller;
 
-import nba.model.DetailAction;
 import nba.model.DetailMatch;
 import nba.service.DetailMatchService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/detailMatchs")
@@ -18,7 +17,14 @@ public class DetailMatchController {
     }
 
     @PostMapping
-    public List<DetailMatch> getDetailAction(@RequestBody DetailAction detailAction){
-        return detailMatchService.add_Detail(detailAction);
+    public HashMap<String, String> getDetailAction(@RequestBody DetailMatch detailMatch){
+        HashMap<String,String> reponse = new HashMap<>();
+        try {
+            detailMatchService.add_Detail_Match(detailMatch);
+            reponse.put("Message","Success . ");
+        }catch (Exception e){
+            reponse.put("Message","Error: " + e.getMessage());
+        }
+        return reponse;
     }
 }
