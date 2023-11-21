@@ -2,11 +2,7 @@ package nba.model;
 
 import java.util.Date;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="Match")
@@ -15,7 +11,9 @@ public class Match {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int match_id;
     private Date match_date;
+    @OneToOne
     private Equipe match_equipe1;
+    @OneToOne
     private Equipe match_equipe2;
     public int match_score1;
     public int match_score2;
