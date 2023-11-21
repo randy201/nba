@@ -29,5 +29,4 @@ public class Equipe {
     public void setEquipe_nom(String equipe_nom) {
         this.equipe_nom = equipe_nom;
     }
-
 }
