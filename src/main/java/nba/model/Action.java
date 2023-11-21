@@ -1,6 +1,7 @@
 package nba.model;
 
-import jakarta.persistence.Entity;
+
+import jakarta.persistence.*;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -14,6 +15,7 @@ public class Action {
     private int action_id;
     private String action_nom;
     private int action_point;
+
     public Action(){}
 
     public int getAction_id() {
