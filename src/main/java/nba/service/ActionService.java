@@ -12,7 +12,6 @@ import java.util.List;
 public class ActionService {
     @Autowired
     private ActionRepository actRepo;
-
     public List<Action> getAction(){
         return actRepo.findAll();
     }

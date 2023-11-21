@@ -1,10 +1,8 @@
 package nba.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name="Equipe")
@@ -13,6 +11,7 @@ public class Equipe {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int equipe_id;
     private String equipe_nom;
+
     public Equipe(){}
 
     public int getEquipe_id() {
@@ -30,4 +29,5 @@ public class Equipe {
     public void setEquipe_nom(String equipe_nom) {
         this.equipe_nom = equipe_nom;
     }
+
 }
