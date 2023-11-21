@@ -14,4 +14,5 @@ public class Action {
     private int action_id;
     private String action_nom;
     private int action_point;
+    public Action(){}
 }

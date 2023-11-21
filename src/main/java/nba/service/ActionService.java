@@ -7,8 +7,6 @@ import nba.repository.ActionRepository;
 
 @Service
 public class ActionService {
-    public ActionService(){ }
-    @Autowired
-    private ActionRepository actionRepository;
+    
 
 }

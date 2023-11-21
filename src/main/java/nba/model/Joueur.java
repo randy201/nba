@@ -15,4 +15,6 @@ public class Joueur {
 
     private String joueur_nom;
     private Equipe joueur_equipe;
+
+    public Joueur(){}
 }

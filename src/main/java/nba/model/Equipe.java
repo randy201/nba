@@ -13,4 +13,5 @@ public class Equipe {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int equipe_id;
     private String equipe_nom;
+    public Equipe(){}
 }

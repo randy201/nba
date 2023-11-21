@@ -19,4 +19,5 @@ public class Match {
     private Equipe match_equipe2;
     public int match_score1;
     public int match_score2;
+    public Match(){}
 }

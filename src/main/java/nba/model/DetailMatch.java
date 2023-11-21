@@ -16,4 +16,5 @@ public class DetailMatch {
     private Joueur det_joueur;
     private int det_temps;
     private Action det_action;
+    public DetailMatch(){}
 }
