@@ -16,4 +16,8 @@ public class JoueurService {
     public List<Joueur> getJoueurByEquipe(Equipe equipe){
         return joueur_Repository.findByEquipe(equipe);
     }
+
+    public List<Joueur> getAll(){
+        return joueur_Repository.findAll();
+    }
 }
